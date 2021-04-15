@@ -1,11 +1,13 @@
+Original App Design Project - README Template
+===
 
 # QueueUp
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -52,10 +54,6 @@ If the store that customers want to go in has reached its max capacity, the app 
 * Login
 * Register- Users/Businesses sign up to create an account 
    * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person.
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
 
 ### 3. Navigation
 
@@ -73,7 +71,51 @@ If the store that customers want to go in has reached its max capacity, the app 
 * Profile -> shows name and history
 * Settings -> Toggle settings to go to dark mode or chenge color cheme
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="https://i.imgur.com/7nzkzdB.jpg" width=600>
+<img src="https://i.imgur.com/BVNogHs.png" width=600>
+
+## Schema 
+### Models
+
+#### Accounts
+
+##### Business Acconts
+| Property | Type     | Description  |
+| -------- | -------- | ------------ |
+| StoreId  | String | Unique identifier(Possibly QR Code) for this store that allows users to easily to be added to Queue |
+| storeName | String | Name of the Store/Business |
+| storeQueue | Array | Data structure to save users |
+| storeCapacity | Number | Numerical value of store max capacity. |
+| currentShoppers | Number | Numerical value that gives current amount of users in the store|
+| averageTimeSpent | Number | Descriptive value that tells how much time a user spends here on average. |
 
 
+
+#### User Accounts
+| Property | Type     | Description  |
+| -------- | -------- | ------------ |
+| userName     | String     | Name of the user |
+| storesInQ     | Array     | A list of stores the user currently is queuing |
+| userId     | String     | Unique identifier(Possibly QR Code) for this user to be easily added to store Queues just by getting it scanned by the store |
+| userName | String     | Profile Information |
+| userLastName | String     | Profile Information |
+| userPhone | String     | Profile Information |
+| userEmail | String     | Profile Information |
+
+
+### Networking
+
+#### List of network requests by screen
+
+- Home Screen of User
+    - (Read/GET) Get all queues of a customer when a user logs in
+    - (Delete) Delete a customer from a Queue
+
+- Home Screen of Businesses
+    - (Delete) Delete a customer from a Queue
+    - (Delete) Delete a Queue
+
+- Create a Queue Screen on Business Side
+    - (Create/POST) Create a new Queue
+
+- Add a Queue Screen on Customer Side
+    - (Read/GET) Get the Existing Queue and add it to Customer's home page
