@@ -32,19 +32,17 @@ If the store that customers want to go in has reached its max capacity, the app 
 
 **Required Must-have Stories**
 
+[x] Configuring Parse server
+[ ] Businesses can login to see how many customers are waiting in line
+[ ] Businesses will have a QRCode reading mechanism to validate walking in users.
+[ ] Businesses can add a customer in line 
 
+**Optional Nice-to-have Stories**
 * Customer side of the app:
     * Each User will have a unique QRCode assigned to themselves.
     * User logs in to see their line number in each businesses
     * User adds a new business to the QueueUp app to see when their turn will come on the 
     * Users deletes a business if he/she no longer wants to wait in line
-* Business side of the app: 
-    * Businesses can login to see how many customers are waiting in line
-    * Businesses will have a QRCode reading mechanism to validate walking in users.
-    * Businesses can add a customer in line 
-    * Bussinesses can notify the customers when its their turn
-
-**Optional Nice-to-have Stories**
 
 * Customer side of the app:
     * If a user forgets to check queue status off the app and tries to walkin to a store at its max capacity, they should be placed into queue automatically by scanning the QRCode of the store.
