@@ -117,3 +117,6 @@ If the store that customers want to go in has reached its max capacity, the app 
 
 - Add a Queue Screen on Customer Side
     - (Read/GET) Get the Existing Queue and add it to Customer's home page
+
+Progress
+<img src="http://g.recordit.co/7iwugD6GFa.gif"/>
