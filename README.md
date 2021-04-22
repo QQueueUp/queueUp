@@ -32,10 +32,10 @@ If the store that customers want to go in has reached its max capacity, the app 
 
 **Required Must-have Stories**
 
-[x] Configuring Parse server
-[ ] Businesses can login to see how many customers are waiting in line
-[ ] Businesses will have a QRCode reading mechanism to validate walking in users.
-[ ] Businesses can add a customer in line 
+    * [x] Configuring Parse server
+    * [ ] Businesses can login to see how many customers are waiting in line
+    * [ ] Businesses will have a QRCode reading mechanism to validate walking in users.
+    * [ ] Businesses can add a customer in line 
 
 **Optional Nice-to-have Stories**
 * Customer side of the app:
