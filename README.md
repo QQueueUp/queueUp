@@ -120,3 +120,4 @@ If the store that customers want to go in has reached its max capacity, the app 
 
 Progress
 <img src="http://g.recordit.co/7iwugD6GFa.gif"/>
+<img src="http://g.recordit.co/lHKvfYgcvn.gif"/>
